@@ -7,7 +7,6 @@ const userSchema=new mongoose.Schema({
     },
     Email:{
         type:String,
-        unique:true
     },
     Mobile:{
         type:String,
@@ -18,7 +17,10 @@ const userSchema=new mongoose.Schema({
     },
     Country:{
         type:String,
-    }
+    },
+    Status:{
+        type:String
+    },
 },{timestamps:true});
 
 
